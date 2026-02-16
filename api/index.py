@@ -27,7 +27,7 @@ def delete_message(chat_id, message_id):
     }
     requests.post(url, json=payload)
 
-@app.route('/api/webhook', methods=['POST'])
+@app.route('/api/index', methods=['POST'])
 def webhook():
     try:
         data = request.json
@@ -59,3 +59,4 @@ def webhook():
 # Vercel requires this for the serverless function to run
 if __name__ == '__main__':
     app.run()
+
