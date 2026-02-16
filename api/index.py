@@ -8,8 +8,9 @@ BOT_TOKEN = os.environ.get("TOKEN")
 BASE_URL = f"https://api.telegram.org/bot{BOT_TOKEN}"
 
 PERMISSIONS = {
-    44: [111222333, 999888777],
-    2: [55555555]
+    7: [111222333, 999888777],
+    9: [55555555],
+    11: [55555557]
 }
 
 def delete_message(chat_id, message_id):
@@ -42,3 +43,4 @@ def index():
 
 if __name__ == '__main__':
     app.run()
+
